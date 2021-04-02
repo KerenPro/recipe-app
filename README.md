@@ -1,9 +1,9 @@
 # Recipe App
 
-##Live App:
+## Live App:
 https://kerenpro.github.io/recipe-app/
 
-##Technologies:
+## Technologies:
 * React
 * API (edemam.com)
 * CSS Design
