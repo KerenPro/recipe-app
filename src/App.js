@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Recipe from "./Recipe/Recipe";
 import './App.css';
 
+
 function App() {
 
 const APP_ID = '515e1ec2';
@@ -9,7 +10,7 @@ const APP_KEY = '4aa842d9247f8305175b336cc9989844';
 
 const [recipes, setRecipes] = useState([]);
 const [search, setSearch] = useState('');
-const [query, setQuery] = useState('chicken');
+const [query, setQuery] = useState('');
 
 useEffect( () => {
   getRecipes();
@@ -34,7 +35,7 @@ const getSearch = e => {
   return (
     <div className="App">
         <form className="search-form" onSubmit={getSearch} >
-            <input className="search-bar" type="text" value={search} onChange={handleSearch}/>
+            <input className="search-bar" id="standard-basic" type="text" placeholder="Search for an ingredient" value={search} onChange={handleSearch}/>
             <button className="search-button" type="submit">Search</button>
         </form>
       <div className="recipes">
