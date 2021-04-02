@@ -6,12 +6,12 @@ function Recipe(props) {
         <div className={style.recipe}>
             <h1 >{props.title}</h1>
             <h2>Ingredients:</h2>
-            <ol>
+            <ul>
                 {props.ingredients.map(ingredient =>(
                 <li>{ingredient.text}</li>
                 ))}
-            </ol>
-            <p>Calories: {props.calories}</p>
+            </ul>
+            <p>Calories: {props.calories.toFixed(2)}</p>
             <img className={style.image} src={props.image} alt={props.title}></img>
         </div>
     )

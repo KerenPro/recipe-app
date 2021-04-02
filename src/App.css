@@ -13,14 +13,14 @@
 .search-bar{
   width: 50%;
   border: none;
-  padding: 10;
+  padding: 10px;
   height: 10%;
 }
 
 .search-button {
   background: #85aec2;
   border: none;
-  padding: 10 20;
+  padding: 10px 20px;
   color: black;
 }
 
