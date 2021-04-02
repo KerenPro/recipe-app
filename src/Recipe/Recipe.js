@@ -4,7 +4,7 @@ import style from './recipe.module.css';
 function Recipe(props) {
     return(
         <div className={style.recipe}>
-            <h1 >{props.title}</h1>
+            <h1 className={style.title}>{props.title}</h1>
             <h2>Ingredients:</h2>
             <ul>
                 {props.ingredients.map(ingredient =>(
